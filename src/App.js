@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
-import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
-import { createUseStyles, ThemeProvider } from "react-jss";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { ThemeProvider } from "react-jss";
 
 import NavBar from "./Components/NavBar";
 import NameBar from "./Components/NameBar";

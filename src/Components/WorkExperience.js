@@ -162,7 +162,7 @@ function WorkExperience(props) {
   };
 
   const renderExperience = (num) => {
-    const { title, company, explanation, logo } = experiences[num];
+    const { title, company, logo } = experiences[num];
 
     return (
       <div>

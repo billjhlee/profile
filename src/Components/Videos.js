@@ -1,8 +1,6 @@
-import { useState, useRef } from "react";
 import { createUseStyles, useTheme } from "react-jss";
 import classNames from "classnames";
 
-import Project from "./Project";
 import Video from "./Video";
 
 const useStyles = createUseStyles(

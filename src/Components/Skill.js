@@ -1,4 +1,3 @@
-import { useState, useRef } from "react";
 import { createUseStyles, useTheme } from "react-jss";
 
 const useStyles = createUseStyles(
