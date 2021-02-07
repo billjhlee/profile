@@ -41,7 +41,7 @@ const useStyles = createUseStyles(
       button: {
         marginTop: `36px`,
       },
-      deparmments: {
+      departments: {
         textAlign: "center",
       },
       major: {
@@ -112,10 +112,12 @@ function School(props) {
 
   const revealSchool = () => {
     setExit(true);
-    setTimeout(() => {
-      setReveal(true);
-      executeScroll();
-    }, 1500);
+    setTimeout(revealAndScroll, 1500);
+  };
+
+  const revealAndScroll = () => {
+    setReveal(true);
+    executeScroll();
   };
 
   const schoolVid = () => {
@@ -136,7 +138,7 @@ function School(props) {
     if (reveal)
       return (
         <div
-          className={classNames("r-container", classes.deparmments, "fadein")}
+          className={classNames("r-container", classes.departments, "fadein")}
         >
           <p
             className={classNames(

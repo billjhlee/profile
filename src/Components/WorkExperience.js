@@ -198,9 +198,11 @@ function WorkExperience(props) {
 
   const handleOpenInfo = () => {
     openInfo(!info);
-    setTimeout(() => {
-      if (!info && scrollRef) executeScroll();
-    }, 100);
+    setTimeout(checkAndScroll, 100);
+  };
+
+  const checkAndScroll = () => {
+    if (!info && scrollRef) executeScroll();
   };
 
   const renderChev = () => {
