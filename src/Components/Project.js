@@ -59,10 +59,20 @@ function Project(props) {
         <h6 className={classNames("zero-margin", classes.name)}>
           {props.name}
         </h6>
-        <a className={classes.link} href={props.link} target="_blank">
+        <a
+          className={classes.link}
+          href={props.link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           {props.link}
         </a>
-        <a className={classes.link} href={props.link2} target="_blank">
+        <a
+          className={classes.link}
+          href={props.link2}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           {props.link2}
         </a>
         <p className={classNames("zero-margin", classes.description)}>

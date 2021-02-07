@@ -50,6 +50,7 @@ function Contact(props) {
         <a
           href="mailto:billyleejh@gmail.com"
           target="_blank"
+          rel="noopener noreferrer"
           className={classes.link}
         >
           billyleejh@gmail.com
